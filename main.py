@@ -15,7 +15,7 @@ model_info
 set_model
 """
 
-TOKEN = "6537582989:AAHCIJNfllZtrMUyv6gbbXSpkHnwDAutqLM"
+TOKEN = "..."
 
 bot = telebot.TeleBot(TOKEN)
 model_wrapper = ModelWrapper()
