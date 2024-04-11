@@ -1,4 +1,3 @@
-import config
 import traceback
 import stat_lm
 import os
@@ -18,6 +17,8 @@ class ModelWrapper:
         self.new_model_name = None
         self.generate_kwargs = None
         self.saved_models_folder = 'saved_models'
+        if not os.path.exists('saved_models'):
+            os.mkdir('saved_models')
 
     def load(self, model_name: str, test_inference: bool = True) -> (bool, str):
         """ Load model by model_name. Return load status and error message. True if success """
